@@ -29,3 +29,7 @@ def is_valid_amount(amount: float) -> bool:
         True if valid, False otherwise
     """
     return amount > 0
+
+def validate_amount_range(amount: float, max_xlm: float = 10000) -> bool:
+    """Validate amount is within safe range."""
+    return 0 < amount <= max_xlm
